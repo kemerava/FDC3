@@ -18,6 +18,7 @@ The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/).
 * Added `clearContext` function and associated `contextClearedEvent` to the `Channel` API, to be able to clear specific or all context types from the channel. ([#1379](https://github.com/finos/FDC3/pull/1379))
 * Added Conformance tests for FDC3 2.2 ([#1586](https://github.com/finos/FDC3/pull/1586))
 * Added custom mocha test runner for conformance tests to better display test progress. ([#1769](https://github.com/finos/FDC3/pull/1769))
+* Added support for arrays of context types in `addContextListener` methods across DesktopAgent, Channel, and PrivateChannel interfaces. This allows applications to listen for multiple specific context types with a single listener registration, improving code conciseness and performance. The array may contain `null` to listen for all context types in addition to specific types. ([#1646](https://github.com/finos/FDC3/issues/1646))
 
 ### Changed
 
